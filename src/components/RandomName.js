@@ -1,0 +1,51 @@
+export default function randomName() {
+  const adjectives = [
+    "Smart ",
+    "Big ",
+    "Tiny  ",
+    "Solid ",
+    "Soft ",
+    "Great ",
+    "Scary ",
+    "White ",
+    "Black ",
+    "Windy ",
+    "Empty ",
+    "Fast ",
+    "Slow ",
+    "Tall ",
+    "Modern ",
+    "Expensive ",
+    "Beautiful ",
+    "Ugly ",
+    "Evil ",
+    "Bad ",
+    "Dark ",
+    "Furious ",
+    "Unstoppable ",
+  ];
+  const nouns = [
+    "Rock",
+    "Lake",
+    "Gun",
+    "Developer",
+    "Tree",
+    "Plane",
+    "Car",
+    "Door",
+    "Coffee",
+    "Wallet",
+    "Gem",
+    "Bike",
+    "Bear",
+    "Island",
+    "Watch",
+    "Sniper",
+    "Soldier",
+    "Mouse",
+    "Dog",
+  ];
+  const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  const noun = nouns[Math.floor(Math.random() * nouns.length)];
+  return adjective + noun;
+}

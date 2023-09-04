@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #FFFF ;
+}
+
+.app-header {
+  background-color: #3198b2;
+  padding: 30px 500px;
+  text-align: center;
+  box-shadow: 0px 5px 5px rgb(134, 135, 135);
+}
+
+h1 {
+  color: #FFFF;
+  font-size: 40px;
+  border-radius: 42px;
+  margin: 0 1px;
+  padding: 0 1px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+h1:hover {
+  border-radius: 42px;
+  box-shadow: inset 200px 0 0 200px #FDFEFE ;
+  color: #3198b2;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 30px;
+}
