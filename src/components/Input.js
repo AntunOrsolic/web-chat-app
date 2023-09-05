@@ -12,8 +12,14 @@ export default function MessageInput({ onSendMessage }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setMessageText("");
+
+    if (messageText.trim() === "") {
+      return; // Ne šalji praznu poruku
+    }
+
+    // Ako unos nije prazan, šalji poruku i resetiraj unos
     onSendMessage(messageText);
+    setMessageText("");
   };
 
   return (

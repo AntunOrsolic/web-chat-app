@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./styles/App.css";
 import MessageBox from "./components/MessageBox";
 import MessageInput from "./components/Input";
-import randomName from "./components/RandomName";
-import randomColor from "./components/RandomColor";
+import randomName from "./helpers/RandomName";
+import randomColor from "./helpers/RandomColor";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
